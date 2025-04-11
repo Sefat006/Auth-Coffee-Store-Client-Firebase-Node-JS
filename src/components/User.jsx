@@ -20,7 +20,7 @@ const User = () => {
           }).then((result) => {
 
             // delete user from databse
-            fetch(`http://localhost:5000/users/${id}`, {
+            fetch(`https://coffee-store-server-six-theta.vercel.app/users/${id}`, {
                 method: 'DELETE',
             })
             .then( res => res.json())
